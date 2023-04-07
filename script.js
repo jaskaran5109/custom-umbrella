@@ -13,7 +13,7 @@ function changeColor(colorCode, color) {
   if (color === "pink") {
     document.querySelector(
       "#umbrella-img"
-    ).src = `./Assets/${color} umbrella.png`;
+    ).src = `./Assets/${color}umbrella.png`;
     document.querySelector(".pink-swatch").classList.add("colorFocus");
     document.querySelector(".blue-swatch").classList.remove("colorFocus");
     document.querySelector(".yellow-swatch").classList.add("colorFocus");
@@ -39,7 +39,7 @@ function changeColor(colorCode, color) {
   } else if (color === "blue") {
     document.querySelector(
       "#umbrella-img"
-    ).src = `./Assets/${color} umbrella.png`;
+    ).src = `./Assets/${color}umbrella.png`;
     document.querySelector(".pink-swatch").classList.remove("colorFocus");
     document.querySelector(".blue-swatch").classList.add("colorFocus");
     document.querySelector(".yellow-swatch").classList.remove("colorFocus");
@@ -65,7 +65,7 @@ function changeColor(colorCode, color) {
   } else if (color === "yellow") {
     document.querySelector(
       "#umbrella-img"
-    ).src = `./Assets/${color} umbrella.png`;
+    ).src = `./Assets/${color}umbrella.png`;
     document.querySelector(".pink-swatch").classList.remove("colorFocus");
     document.querySelector(".blue-swatch").classList.remove("colorFocus");
     document.querySelector(".yellow-swatch").classList.add("colorFocus");
