@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customize Umbrella</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="customizer">
+      <div class="first-child">
+        <div class="umbrella-preview">
+          <img
+            src="./Assets/Blue umbrella.png"
+            alt="Pink Umbrella"
+            id="umbrella-img"
+          />
+          <div class="logo-container">
+            <img
+              src="./Assets/Blue umbrella.png"
+              alt="Logo Placeholder"
+              id="logo-img"
+            />
+          </div>
+        </div>
+
+        <div class="loader">
+          <img src="./Assets/loader_icon.svg" />
+        </div>
+      </div>
+
+      <div class="second-child">
+        <div class="color-swatch">
+          <h1>Customize your Umbrella</h1>
+          <button
+            class="blue-swatch active"
+            onclick="changeColor('#e6f6fc','blue')"
+          ></button>
+          <button
+            class="pink-swatch"
+            onclick="changeColor('#ffdfec','pink')"
+          ></button>
+
+          <button
+            class="yellow-swatch"
+            onclick="changeColor('#FFFAED','yellow')"
+          ></button>
+        </div>
+        <div class="additional-text">
+          <h3>Customize your umbrella</h3>
+          <h3 class="text-highlight">Upload a logo for an instant preview</h3>
+          <p style="font-size: 12px; margin-top: 8px">
+            .png and .jpg file only. Max file size is 5MB.
+          </p>
+        </div>
+        <div class="logo-upload">
+          <input
+            type="file"
+            id="logo-file"
+            onchange="previewLogo(event)"
+            accept=".png, .jpg"
+            style="cursor: pointer"
+          />
+          <div class="uploadButton">
+            <img src="./Assets/upload_icon.svg" class="default-image-upload" />
+            <img src="./Assets/loader_icon.svg" class="loader-image-upload" />
+            <label for="logo-file" id="upload-logo-label">Upload Logo</label>
+            <p
+              id="empty-p-tag"
+              onclick="clearSrc()"
+              style="cursor: pointer"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
